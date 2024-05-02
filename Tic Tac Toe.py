@@ -34,7 +34,7 @@ class Tic_Tac_Toe:
 
 
                 while tracking_spots[box] != " ":
-                    print("This spot is already taken, choose a empty one")
+                    print("Este cuadro ya escogido, elige uno vacio")
                     box = int(player1.choose_box())
                     
                 spots[box] = player1.team
@@ -53,7 +53,7 @@ class Tic_Tac_Toe:
                     box = int(player2.choose_box())
 
                 while tracking_spots[box] != " ":
-                    print("This spot is already taken, choose a empty one")
+                    print("Este cuadro ya escogido, elige uno vacio")
                     box = int(player2.choose_box())
 
                 spots[box] = player2.team
