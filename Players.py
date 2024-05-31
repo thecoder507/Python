@@ -5,8 +5,10 @@ class Player:
 
     def choose_box(self):
         position = input(f"{self.name}, seleccione donde desea colocar su {self.team}: ")
+        while position.isdigit() == False:
+            print('\nDebe ingresar un número entre 1 y 9')
+            position = input(f"{self.name}, seleccione donde desea colocar su {self.team}: ")
         return position
-
  
 def team_selection(player1, player2):
     teams = ["x", "0"]
